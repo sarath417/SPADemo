@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Add New Employee";
+}
+<table><tr><td height="10px"></td></tr></table>
+
+<table cellpadding="4" cellspacing="4" width="70%" align="center" style="background-color: skyblue;
+border:solid 2px red; padding-top:20px;">
+    <tr>
+        <td colspan="3" style="background-color:gray; font-size:18pt;
+font-weight:bold; height:30px; text-align:center;">
+            Add New Employee
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">Employee ID</td>
+        <td><input type="text" ng-model="EmplloyeeID" />  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">Employee Name</td>
+        <td><input type="text" ng-model="Name" />  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">Email</td>
+        <td><input type="text" ng-model="Email" />  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">Project Name</td>
+        <td><input type="text" ng-model="Project" />  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">Date Of Joining</td>
+        <td><input type="text" ng-model="DOJ" />  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">City</td>
+        <td><input type="text" ng-model="City" />  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">Country</td>
+        <td><input type="text" ng-model="Country" />  </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="button" value="Save" ng-click="save()" />
+        </td>
+    </tr>
+
+</table>  

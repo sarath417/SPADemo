@@ -1,0 +1,30 @@
+﻿<table><tr><td height="10px"></td></tr></table>
+<table cellpadding="4" cellspacing="4" width="90%" align="center"
+       style="background-color: skyblue; border:solid 2px red; padding-top:20px;">
+    <thead>
+        <tr style="background-color: #F5F5F5;">
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Email</th>
+            <th>Project Name</th>
+            <th>Date Of Joining</th>
+            <th>City</th>
+            <th>Country</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="emp in Employees">
+            <td>{{emp.EmployeeID}}</td>
+            <td>{{emp.EmployeeName}}</td>
+            <td>{{emp.Email}}</td>
+            <td>{{emp.Project}}</td>
+            <td>{{emp.DOJ}}</td>
+            <td>{{emp.City}}</td>
+            <td>{{emp.Country}}</td>
+            <td><a ng-click="editEmployee(emp.EmployeeID)">Edit</a></td>
+            <td><a ng-click="deleteEmployee(emp.EmployeeID)">Delete</a></td>
+        </tr>
+    </tbody>
+</table>  

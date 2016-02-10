@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Delete Employee";
+}
+
+<table><tr><td height="10px"></td></tr></table>
+
+<table cellpadding="4" cellspacing="4" width="70%" align="center" style="background-color: skyblue; border:solid 2px red; padding-top:20px;">
+    <tr><td colspan="3" style="background-color:gray; font-size:18pt; font-weight:bold; height:30px; text-align:center;">Delete Employee Information</td></tr>
+    <tr>
+
+        <td style="text-align:right;">Employee ID</td>
+        <td>{{Employee.EmployeeID}}  </td>
+    </tr>
+    <tr>
+
+        <td style="text-align:right;">Employee Name # </td>
+        <td> {{Employee.EmployeeName}}  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">Email # </td>
+        <td>{{Employee.Email}}  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">Project Name # </td>
+        <td>{{Employee.Project}}  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">Date Of Joining # </td>
+        <td>{{Employee.DOJ}}  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">City # </td>
+        <td>{{Employee.City}}  </td>
+    </tr>
+    <tr>
+        <td style="text-align:right;">Country # </td>
+        <td>{{Employee.Country}}  </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="button" value="Delete" ng-click="delete()" />
+        </td>
+    </tr>
+
+</table>  
